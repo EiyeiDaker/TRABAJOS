@@ -4,7 +4,7 @@
  */
 //Una empresa automotriz necesita un sistema para seleccionar el tipo de carro (auto, SUV o  camioneta) lo cual debe de aparecer en un menú,
 //y el color (negro, blanco o rojo) en otro menú.  Al final se necesita que despliegue la selección realizada. Nota. Debe de anidarse una estructura 
-//de selección múltiple dentro de otra. 
+//de selección múltiple dentro de otraa.
 
 package TRABAJOS;
 import java.util.Scanner;
@@ -23,7 +23,7 @@ public class EmpresaAutomotrizSWITCH {
         System.out.println("3. Camioneta");
         System.out.println("Escriba la opcion deseada: ");
         carro=input.nextInt();
-        
+       
         int color;
         
         System.out.println("MENU COLORES");
