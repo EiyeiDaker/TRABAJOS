@@ -10,7 +10,7 @@ package TRABAJOS;
 import java.util.Scanner;
 /**
  *
- * @author EDGAR JESID VELEZ CASTELLANOS 20241222443
+ * @author EDGAR JESID VELEZ CASTELLANOS 20241222443;
  */
 public class Teclado10NumerosWHILE {
     

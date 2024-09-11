@@ -8,7 +8,7 @@ import java.util.Scanner;
 /**
        Un supermercado realiza una tómbola con todos los clientes, si son hombres tienen que sacar
        de una canasta una bolita la cual tiene un número grabado y si son mujeres lo mismo pero de
-       otra canasta, los premios se dan bajo la siguiente tabla:
+       otra canasta, los premios se dan bajo la siguiente tabla
 HOMBRES                         MUJERES
 # Bolita Premio              # bolita Premio
 1 Desodorante                1 Loción
