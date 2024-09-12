@@ -69,7 +69,7 @@ public class ParqueoAbastoss {
 
                     Scanner ingresoPermanencia = new Scanner(System.in);
 
-                    System.out.println("ingrese tiempo que permanecio el camion: " );
+                    System.out.println("ingrese tiempo que permanecio el camion: " ); // solicitamos el tiempo que permanecio el camion en el parqueadero
 
                     double tiempopermanencia = ingresoPermanencia.nextDouble();
 
@@ -80,7 +80,7 @@ public class ParqueoAbastoss {
                     
                     Scanner largoDelCamion = new Scanner(System.in);
 
-                    System.out.println("ingrese el largo del camion:  ");
+                    System.out.println("ingrese el largo del camion:  "); // solicitamos el largo del camion 
 
                     double MCamion = largoDelCamion.nextDouble();
 
@@ -89,34 +89,34 @@ public class ParqueoAbastoss {
 
                
 
-                    double PrecioPagar;
+                    double ValorPagar;
 
                 
                     if(ingresos[i][0] == 2){
                     if (ingresos[i][1] == 1){
                         if (ingresos[i][2] < 8 && ingresos[i][2] > 0) {
-                            PrecioPagar = 15000 * ingresos[i][2];
+                            ValorPagar = 15000 * ingresos[i][2];
 
-                            ingresos[i][5]= PrecioPagar;
+                            ingresos[i][5]= ValorPagar;
                         } else if (ingresos[i][2] >= 8) {
-                            PrecioPagar = 9000 * ingresos[i][2];
+                            ValorPagar = 9000 * ingresos[i][2];
 
-                            ingresos[i][5]= PrecioPagar;
+                            ingresos[i][5]= ValorPagar;
                         } else {
                             ingresos[i][5] = 1/0; 
                         }
                     } else {
                         if (ingresos[i][2] < 8 && ingresos[i][2] > 0) {
-                            PrecioPagar = 60000;
+                            ValorPagar = 60000;
 
-                            ingresos[i][5]= PrecioPagar;
+                            ingresos[i][5]= ValorPagar;
                         } else if (ingresos[i][2] >= 8) {
-                            PrecioPagar = 60000;
+                            ValorPagar = 60000;
                             if (ingresos[i][2] >= 10){
                                 for (int in = 10; ingresos[i][2] >= in; in+=10){
-                                    PrecioPagar += 7000;
+                                    ValorPagar += 7000;
 
-                                    ingresos[i][5] = PrecioPagar;
+                                    ingresos[i][5] = ValorPagar;
                                 }
                             }
                         } else {
@@ -126,18 +126,18 @@ public class ParqueoAbastoss {
 
                 } else {
                     if (ingresos[i][3] <= 2) {
-                        PrecioPagar = 0;
-                        ingresos[i][5] = PrecioPagar;
+                        ValorPagar = 0;
+                        ingresos[i][5] = ValorPagar;
                     } else {
-                        PrecioPagar = 4000 * ingresos[i][3];
+                        ValorPagar = 4000 * ingresos[i][3];
 
                         if(ingresos[i][4] > 4){
-                            double largoIncremento = 0.25 * PrecioPagar;
+                            double largoIncremento = 0.25 * ValorPagar;
 
-                            largoIncremento += PrecioPagar;
+                            largoIncremento += ValorPagar;
                             ingresos[i][5] = largoIncremento;
                         } else {
-                            ingresos[i][5] = PrecioPagar;
+                            ingresos[i][5] = ValorPagar;
                         }
 
                         
