@@ -4,7 +4,7 @@
  */
 package GarajeDeVehiculo2;
 
-/**
+/**vehiculo = new Auto(matricula, marcaAuto, precioAuto, cilindradaAuto, tieneRadio, tieneNavegador);
  *
  * @author admin
  */
